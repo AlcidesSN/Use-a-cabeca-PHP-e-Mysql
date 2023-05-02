@@ -17,7 +17,7 @@
   </header>
   <main>
     <?php
-   include_once('appvars.php');
+   include_once('vars/appvars.php');
    include_once('connectvars.php');
     //Conecta ao banco de dados
     $bdc = mysqli_connect(BD_HOST,BD_USER, BD_PASSWORD, BD_NAME)

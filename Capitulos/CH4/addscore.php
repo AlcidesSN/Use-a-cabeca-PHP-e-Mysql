@@ -15,8 +15,8 @@
   </header>
   <main>
     <?php
-    include_once('appvars.php');
-    include_once('connectvars.php');
+    include_once('vars/appvars.php');
+    include_once('vars/connectvars.php');
     //Define as constantes do caminho e do tamanho maximo dos arquivos
 
     if (isset($_POST['submit'])) {
