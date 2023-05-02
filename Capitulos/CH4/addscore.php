@@ -15,15 +15,17 @@
   </header>
   <main>
     <?php
+    //Pega as valores fixos em outros arquivos
     include_once('vars/appvars.php');
     include_once('vars/connectvars.php');
-    //Define as constantes do caminho e do tamanho maximo dos arquivos
 
+    //Verifica se o formulario foi enviado
     if (isset($_POST['submit'])) {
+      //pega os valores do formulario
       $name = $_POST['name'];
       $score = $_POST['score'];
       $screenshot = time() . $_FILES['screenshot']['name'];
-
+      //verifica se todos os campos do formulario foram preenchidos
       if (!empty($name) && (!empty($score)) && (!empty($screenshot))) {
         //move o arquivo para pasta alvo
         $target = GW_UPLOADPATH . $screenshot;
@@ -38,7 +40,7 @@
           $query = "INSERT INTO guitarwars values(0,'$name',NOW(),'$score','$screenshot')";
           $data = mysqli_query($bdc, $query)
             or die('Erro ao consultar o banco de dados.');
-
+          //Mostra as informações retiradas do banco de dados
           echo '<p>Obrigado por adicionar seu recorde.</p>';
           echo '<p><strong>Nome: </strong>' . $name . '<br>';
           echo '<strong>Pontuação: </strong>' . $score . '</p>';
@@ -50,8 +52,9 @@
 
           mysqli_close($bdc);
         } else {
-          echo '<p class="error">Erro ao mover o arquivo para pasta.</p>';
-          echo '<p class="error">Pasta:  ' . $_FILES['screenshot']['tmp_name'] . '</p>';
+          //Mostra mensagem de erro por causa do tamanho do arquivo
+          echo '<p class="error">O tamanho do arquivo é muito grande deve ser menor que 52kbs.</p>';
+
         }
       } else {
         echo '<p class="error">Por favor preenchar todos os campos para adicionar sua pontuação.</p>';
@@ -60,8 +63,9 @@
 
     ?>
     <hr />
+    <!--Criação do formulario -->
     <form enctype="multipart/form-data" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-      <input type="hidden" name="MAX_FILE_SIZE" value="53768">
+      <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo MAX_SIZE ?>">
       <label for="name">Nome:</label>
       <input type="text" name="name" id="name" value="<?php if (!empty($name)) echo "$name"; ?>"><br>
       <label for="score">Pontuação:</label>

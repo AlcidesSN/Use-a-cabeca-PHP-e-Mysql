@@ -17,6 +17,7 @@
   </header>
   <main>
     <?php
+    //Pega as valores fixos em outros arquivos
    include_once('vars/appvars.php');
    include_once('vars/connectvars.php');
     //Conecta ao banco de dados
