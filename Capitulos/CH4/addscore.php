@@ -16,8 +16,8 @@
   <main>
     <?php
     //Pega as valores fixos em outros arquivos
-    include_once('vars/appvars.php');
-    include_once('vars/connectvars.php');
+    require_once('vars/appvars.php');
+    require_once('vars/connectvars.php');
 
     //Verifica se o formulario foi enviado
     if (isset($_POST['submit'])) {
