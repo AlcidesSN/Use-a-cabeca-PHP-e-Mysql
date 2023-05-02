@@ -15,8 +15,9 @@
   </header>
   <main>
     <?php
+    include_once('appvars.php');
+    include_once('connectvars.php');
     //Define as constantes do caminho e do tamanho maximo dos arquivos
-    define('GW_UPLOADPATH', 'images/');
 
     if (isset($_POST['submit'])) {
       $name = $_POST['name'];
@@ -30,7 +31,7 @@
 
 
           //Conecta ao banco de dados
-          $bdc = mysqli_connect('localhost', 'root', '', 'rockit')
+          $bdc = mysqli_connect(BD_HOST,BD_USER, BD_PASSWORD, BD_NAME)
             or die('Erro ao conectar ao banco de dados.');
 
           //Obtem os dados do banco de dados
