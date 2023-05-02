@@ -1,0 +1,79 @@
+* {
+  font-family: "JetBrain Mono";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form label {
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+  min-width: 150px;
+}
+
+header {
+  text-align: center;
+  min-height: 100px;
+}
+
+body {
+  text-align: left;
+}
+
+main {
+  padding: 50px;
+
+}
+
+.bnt {
+  background-color: #cfcfcf;
+  color: black;
+  width: 210px;
+  font-size: 20px;
+  border-radius: 10vh;
+  border: 0px;
+}
+
+.infor {
+  padding: 10px;
+  max-width: max-content;
+  margin: 0 auto;
+  border: 2px solid black;
+  font-size: 20px;
+
+}
+
+p {
+  font-size: 15px;
+}
+
+footer {
+  padding: 0px;
+  padding-left: 30px;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 15px;
+  border-top: 2px solid black;
+  min-width: 100%;
+  text-align: left;
+}
+
+.bnt:hover {
+  background-color: #81e2f3;
+  border: #81e2f3;
+}
+
+div {
+  display: inline-block;
+
+}
+
+.input {
+  width: 24vh;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+}

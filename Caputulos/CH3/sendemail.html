@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles3.css"/>
+  <title>Enviar email</title>
+</head>
+<body>
+  <header>
+    <a href="addemail.html" itemtype="img"><img src="elvislogo.gif" alt="Make Me Elvis logo"></a>
+  </header>
+  <main class="infor">
+    <div>
+      <p><b>Privado:</b>Para uso exclusivo de Elmer.</p>
+      <p>Escreva emails para os cadastrados.</p><br><br>
+      <form id="form1" method="post" action="sendemail.php">
+        <label class="sendemail" for="subject">Assunto:</label><br>
+        <input class="input" type="text" name="subject" id="subject"><br>
+        <label class="sendemail" for="elvimail">Corpo do texto:</label><br>
+        <textarea name="elvimail" id="elvimail" cols="60" rows="10"></textarea><br>
+        <input class="bnt" class="input" type="submit" value="Enviar">
+      </form>
+    </div>
+    <div>
+      <img src="blankface.jpg" alt="blank face">
+    </div>
+
+  </main>
+  <footer>
+    <p>Alcides Sandoli neto &copy alcidessandoli@gmail.com</p>
+  </footer>
+</body>
+</html>

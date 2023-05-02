@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Repore de uma abdução</title>
+</head>
+<body>
+    <header>
+        <h1>Aliens me abduziram - Reporte de uma abdução</h1>
+    </header>
+    
+    <form class="infor" method="post" action="report.php">
+        <p >Conte sua historia de abdução alienigena:</p>
+        <label for="firstname">Nome:</label>
+        <input class="input" type="text" id="firstname" name="firstname"/><br/>
+        <label for="lastname">Sobrenome:</label>
+        <input class="input" type="text" id="lastname" name="lastname"/><br/>
+        <label for="email">E-mail:</label>
+        <input class="input" type="email" id="email" name="email"/><br/>
+        <label for="whenithappened">Quando isso aconteceu:</label>
+        <input class="input" type="text" id="whenithappened" name="whenithappened"/><br/>
+        <label for="howlong">Por quanto tempo você foi:</label>
+        <input class="input" type="text" id="howlong" name="howlong"/><br/>
+        <label for="howmany">Quantos você viu:</label>
+        <input class="input" type="text" id="howmany" name="howmany"/><br/>
+        <label for="aliendescription">Descreva eles:</label>
+        <input class="input" type="text" id="aliendescription" name="aliendescription" size="32"/><br/>
+        <label for="whattheydid">O que esles fizeram com você:</label>
+        <input class="input" type="text" id="whattheydid" name="whattheydid" size="32"/><br/>
+        <label for="fangspotted">você viu meu cachorro Fang ?</label>
+        sim <input id="fangspotted" name="fangspotted" type="radio" value="sim" >
+        não  <input id="fangspotted" name="fangspotted" type="radio" value="não" ><br/>
+        <img src="fang.jpg"width="100" height="175" 
+        alt="cachorro abduzido Fang."><br/>
+        <label for="Others">Mais alguma coisa a adicionar?</label>
+        <textarea class="input" name="others" id="other"></textarea></br/>
+        <input id="bnt" class="input" type="submit" value="Report Abduction" name="submit">  
+      </form>
+      <footer>
+        <p>Alcides Sandoli neto &copy alcidessandoli@gmail.com</p>
+      </footer>
+</body>
+</html>
