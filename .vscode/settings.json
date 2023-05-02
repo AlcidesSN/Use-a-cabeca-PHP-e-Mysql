@@ -1,3 +1,10 @@
 {
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 18,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.tabSize": 2,
+    "diffEditor.wordWrap": "off",
+    "editor.wordWrap": "on",
+    "files.autoSaveDelay": 200
   
 }
