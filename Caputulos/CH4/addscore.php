@@ -21,11 +21,11 @@
     if (isset($_POST['submit'])) {
       $name = $_POST['name'];
       $score = $_POST['score'];
-      $screenshot = $_FILES['screenshot']['name'];
+      $screenshot = time() . $_FILES['screenshot']['name'];
 
       if (!empty($name) && (!empty($score)) && (!empty($screenshot))) {
         //move o arquivo para pasta alvo
-        $target = GW_UPLOADPATH . time() . $screenshot;
+        $target = GW_UPLOADPATH . $screenshot;
         if (move_uploaded_file($_FILES['screenshot']['tmp_name'], $target)) {
 
 
