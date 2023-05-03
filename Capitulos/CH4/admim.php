@@ -35,7 +35,7 @@
       //exibe os dados das pontuações
       echo '<tr class= "scorerow"><td><strong>' . $row['name'] . '</strong></td>';
       echo '<td>' . $row['date'] . '</td>';
-      echo '<td>' . $row['score'] . '</td>';
+      echo '<td> -<em> ' . $row['score'] . '<em>:</td>';
       echo '<td><a href="removescore.php?id=' . $row['id'] . '&amp;date=' . $row['date'] . '&amp;name=' . $row['name'] . ' &amp;Score=' . $row['score'] . '&amp;screenshot=' . $row['screenshot'] . '">Remover</a></td></tr>';
     }
     echo '</table>';
