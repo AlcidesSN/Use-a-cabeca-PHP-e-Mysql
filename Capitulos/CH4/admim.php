@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h2>Guitar Wars - Administração de Pontos</h2>
+    <h1>Guitar Wars - Administração de Pontos</h1>
   </header>
   <main>
     <?php
@@ -35,8 +35,8 @@
       //exibe os dados das pontuações
       echo '<tr class= "scorerow"><td><strong>' . $row['name'] . '</strong></td>';
       echo '<td>' . $row['date'] . '</td>';
-      echo '<td> -<em> ' . $row['score'] . '<em>:</td>';
-      echo '<td><a href="removescore.php?id=' . $row['id'] . '&amp;date=' . $row['date'] . '&amp;name=' . $row['name'] . ' &amp;Score=' . $row['score'] . '&amp;screenshot=' . $row['screenshot'] . '">Remover</a></td></tr>';
+      echo '<td> -<em> ' . $row['score'] . '</em>:</td>';
+      echo '<td><a href="removescore.php?id=' . $row['id'] . '&amp;date=' . $row['date'] . '&amp;name=' . $row['name'] . ' &amp;score=' . $row['score'] . '&amp;screenshot=' . $row['screenshot'] . '">Remover</a></td></tr>';
     }
     echo '</table>';
 

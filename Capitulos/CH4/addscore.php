@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h2>Guitar Wars - Adicione sua pontuação</h2>
+    <h1>Guitar Wars - Adicione sua pontuação</h1>
   </header>
   <main>
     <?php

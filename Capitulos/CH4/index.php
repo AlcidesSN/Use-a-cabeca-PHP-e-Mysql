@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h2>Guitar Wars - Pontuações</h2>
+    <h1>Guitar Wars - Pontuações</h1>
     <p>Bem-Vindo Guerreiro da guitara, do que você prescisa para alcançar o topo desta lista? É claro que é apenas <a href="addscore.php">adicinar sua pontuação aqui.</a> </p>
     <hr>
   </header>
