@@ -42,7 +42,7 @@
       $screenshot = $_POST['screenshot'];
 
     }else{
-      echo '<p class="error">Nenhum pontuação foi expecificada para remoção.</p>';
+      echo '<p class="error">Nenhum pontuaçao foi expecificada para remoção.</p>';
     }
     if(isset($_POST['submit'])){
       if($_POST['confirm']=='yes'){
