@@ -66,6 +66,7 @@
         echo '<p class="error">A pontuação não foi removida.</p>';
       }
     }else if(isset($id) && isset($name) && isset($score) && isset($screenshot)){
+      //Criação do formulario
       ?>
       <p>Você deseja apagar a seguinte pontuação?</p>
       <p><strong>Nome: </strong><?php echo $name; ?></p><br>
